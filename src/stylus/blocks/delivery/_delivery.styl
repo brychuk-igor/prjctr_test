@@ -1,0 +1,135 @@
+.delivery
+	padding-top pt = 110px
+	padding-bottom pb = 345px
+	text-align center
+	@media xs
+		padding-top pt*0.5
+		padding-bottom pb*0.3
+		max-height 100%
+	@media sm
+		padding-top pt*0.6
+		padding-bottom pb*0.4
+	@media md
+		padding-top pt*0.8
+		padding-bottom pb*0.65
+	@media lg
+		padding-top pt
+		padding-bottom bm
+
+.delivery__container
+	margin 0 auto
+	max-width 100%
+	width 1200px
+
+.delivery__wrapper
+	display flex
+	justify-content space-between
+	flex-wrap nowrap
+	margin-bottom mb = 250px
+
+	@media xs
+		justify-content space-around
+		flex-wrap wrap
+		margin-bottom mb*0.2
+	@media sm
+		justify-content space-around
+		flex-wrap wrap
+		margin-bottom mb*0.2
+	@media md
+		flex-wrap nowrap
+		margin-bottom mb*0.5
+	@media lg
+		flex-wrap nowrap
+		margin-bottom mb
+
+.delivery__item
+	display inline-block
+	max-width 360px
+	padding-right 5px
+	padding-left 5px
+	vertical-align center
+	padding-top mt = 160px
+	@media xs
+		padding-top mt*0.25
+	@media sm
+		width 340px
+		padding-top mt*0.25
+	@media md
+		width 340px
+		padding-top mt*0.5
+	@media lg
+		padding-top mt
+
+.delivery__icon
+	margin-bottom 80px
+	@media xs
+		transform scale(0.85)
+		margin-bottom 20px
+	@media sm
+		margin-bottom 20px
+	@media md
+		margin-bottom 40px
+	@media lg
+		margin-bottom 80px
+
+.delivery__content
+	font(3.3em, #ffffff, 1.3em)
+	@media xs
+		font-size 2.4em
+	@media sm
+		font-size 2.4em
+	@media md
+		font-size 2.8em
+	@media lg
+		font-size 3.3em
+
+.delivery
+	&__text
+		font(3.3em, #ffffff, 1.3em)
+		@media xs
+			font-size 2.4em
+		@media sm
+			font-size 2.4em
+		@media md
+			font-size 2.8em
+		@media lg
+			font-size 3.3em
+		&_top
+			position relative
+			z-index 10
+			&:after
+				display block
+				content ''
+				position absolute
+				top 0
+				width 100%
+				height 125%
+				background-image url(../img/delivery_bg_center.svg)
+				background-repeat no-repeat
+				background-position center
+				z-index -1
+		&_bottom
+			margin-top 65px
+			@media xs
+				margin-top 20px
+				font-size 2.4em
+			@media sm
+				margin-top 20px
+				font-size 2.4em
+			@media md
+				margin-top 40px
+				font-size 2.8em
+			@media lg
+				margin-top 65px
+				font-size 3.3em
+	&__image
+		margin-top 85px
+		@media xs
+			margin-top 25px
+		@media sm
+			margin-top 25px
+		@media md
+			margin-top 50px
+		@media lg
+			margin-top 85px
+

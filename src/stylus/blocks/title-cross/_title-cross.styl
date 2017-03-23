@@ -1,0 +1,49 @@
+.title-cross
+	font-size 9em
+	position relative
+	text-align center
+	text-transform uppercase
+	font-weight 500
+	@media xs
+		font-size 6em
+		text-align left
+		margin-left 20px
+	@media sm
+		font-size 6em
+	@media md
+		font-size 7em
+	@media lg
+		font-size 8em
+	&:after
+		display block
+		content ''
+		width 239px
+		height 12px
+		background #f48a00
+		left 27%
+		top 50%
+		position absolute
+		@media xs
+			height 8px
+			left -4.5%
+			top 48%
+		@media sm
+			width 175px
+			height 10px
+			left 22%
+			top 48%
+		@media md
+			width 220px
+			height 12px
+			left 26%
+			top 48%
+		@media lg
+			width 239px
+			height 12px
+			left 29%
+			top 50%
+
+	&_light
+		color #f1f1f3
+	&_durk
+		color #1F1F1F
