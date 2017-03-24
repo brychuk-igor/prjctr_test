@@ -1,5 +1,4 @@
-Frodo_Buffet - test project
-follow the instructions in Git Bash
+
 ```
 npm install
 ```

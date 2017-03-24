@@ -1,3 +1,5 @@
 mixin b_header()
-	+b.header
-		+e('h1').title Центр надання адміністративних послуг
+	+b.header(style="background-color: #383e49;")
+		+e.wrap
+			+e('img').image(src="../img/title-image.png")
+			+e('h1').title Центр надання адміністративних послуг

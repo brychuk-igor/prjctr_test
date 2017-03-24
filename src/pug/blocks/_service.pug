@@ -1,4 +1,6 @@
-mixin b_servise(iconName, text)
-	+e.service
-		+e('img').image(src=iconName alt="")
-		+e('p').name!= text
+mixin b_service(url, text)
+	+b('div').service()
+		+e.icon
+			+e('img').image(src= url alt="")
+		+e.content
+			+e('p').text= text

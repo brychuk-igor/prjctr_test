@@ -1,27 +1,37 @@
 mixin b_list()
+	- var icon_1 = 'img/1.png'
+	- var text_1 = 'Автотранспорт'
+	- var icon_2 = 'img/2.png'
+	- var text_2 = 'Будівництво, архітектура, землекористування'
+	- var icon_3 = 'img/3.png'
+	- var text_3 = 'Громадянство'
+	- var icon_4 = 'img/4.png'
+	- var text_4 = 'Захист прав дитини'
+	- var icon_5 = 'img/5.png'
+	- var text_5 = 'Реєстрація місця проживання/перебування'
+	- var icon_6 = 'img/6.png'
+	- var text_6 = 'Підприємницька діяльність'
+	- var icon_7 = 'img/7.png'
+	- var text_7 = 'Санітарне та епідемічне благополуччя, ветеринарна медицина'
+	- var icon_8 = 'img/8.png'
+	- var text_8 = 'Комунальне господарство'
+
 	+b.list
 		+e.container
-			+b.item
-				+e('img').image(src="img/1.png")
-				+e('p').name Автотранспорт
-			+b.item
-				+e('img').image(src="img/2.png")
-				+e('p').name Будівництво, архітектура, землекористування
-			+b.item
-				+e('img').image(src="img/3.png")
-				+e('p').name Громадянство
-			+b.item
-				+e('img').image(src="img/4.png")
-				+e('p').name Захист прав дитини
-			+b.item
-				+e('img').image(src="img/5.png")
-				+e('p').name Реєстрація місця проживання/перебування
-			+b.item
-				+e('img').image(src="img/6.png")
-				+e('p').name Підприємницька діяльність
-			+b.item
-				+e('img').image(src="img/7.png")
-				+e('p').name Санітарне та епідемічне благополуччя, ветеринарна медицина
-			+b.item
-				+e('img').image(src="img/book.png")
-				+e('p').name Комунальне господарство
+			+e('a').item(href="#")
+				+b_service(icon_1, text_1)
+			+e('a').item(href="#")
+				+b_service(icon_2, text_2)
+			+e('a').item(href="#")
+				+b_service(icon_3, text_3)
+			+e('a').item(href="#")
+				+b_service(icon_4, text_4)
+			+e('a').item(href="#")
+				+b_service(icon_5, text_5)
+			+e('a').item(href="#")
+				+b_service(icon_6, text_6)
+			+e('a').item(href="#")
+				+b_service(icon_7, text_7)
+			+e('a').item(href="#")
+				+b_service(icon_8, text_8)
+			
